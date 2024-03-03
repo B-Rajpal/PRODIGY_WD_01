@@ -1,0 +1,210 @@
+html {
+  scroll-behavior: smooth;
+}
+.App {
+  font-family: Arial, sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #844208;
+  z-index: 1000;
+  transition: background-color 0.3s;
+}
+
+#navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+#navbar li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+#navbar li a {
+  display: block;
+  padding: 10px 20px;
+  color: #fff;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+#navbar li a:hover {
+  background-color: goldenrod;
+}
+
+
+
+
+.scrolled #navbar {
+  background-color: #670404;
+}
+#home,
+#about,
+#services,
+#contact{
+  height:90vh;
+  padding:10vw 0;
+}
+
+#home{
+  background-image: url("homebg.webp");
+  color:white;
+  padding:25vh 0 0 10vw ;
+  font-family: sans-serif;
+  font-size: 30px;
+}
+/* App.css */
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.about-image {
+  flex: 1; /* Set the image column to occupy 1/3 of the container */
+}
+
+.about-content {
+  flex: 1; /* Set the content column to occupy 2/3 of the container */
+  font-size: 25px;
+  line-height: 200%;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%; /* Ensure the image does not exceed its container's width */
+  height: auto; /* Maintain the aspect ratio of the image */
+}
+
+.section1 {
+  display: flex;
+  gap:40px;
+}
+.service-item {
+  margin: 40px;
+  border: 2px solid #ccc;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width:40vw;
+}
+
+.service-item h3 {
+  color: #333;
+}
+
+.service-item p {
+  color: #666;
+}
+
+.service-item ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.service-item ul li {
+  color: #888;
+  margin-bottom: 5px;
+}
+
+/* Colorful CSS */
+.service-item:nth-child(even) {
+  background-color: #f1f1f1;
+}
+
+.service-item:nth-child(odd) {
+  background-color: #e5e5e5;
+}
+
+.service-item h3 {
+  color: #333;
+}
+
+.service-item p {
+  color: #555;
+}
+
+.contact-info{
+  margin-left:40vw ;
+  flex:2;
+}
+
+.contact-info h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.contact-info p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.contact-info ul {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-info li {
+  margin-bottom: 10px;
+}
+
+.contact-info strong {
+  font-weight: bold;
+}
+
+#contact .section1 {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  margin-top: 30px;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.quick-links{
+  right:0;
+  flex:3;
+}
+
+.quick-links h3 {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.quick-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.quick-links li {
+  margin-bottom: 10px;
+}
+
+.quick-links a {
+  font-size: 10px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.quick-links a:hover {
+  color: #0056b3;
+}
+
